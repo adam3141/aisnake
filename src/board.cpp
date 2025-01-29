@@ -59,8 +59,11 @@ void Board::setStartLocation(Location &location, Direction &direction) {
 }
 
 BoardSymbols Board::getBoardSymbol(const Location &location) const {
-
-  return BoardSymbols::Empty;
+  // Get offset into the board array and return the symbol located there.
+  // Note: We don't do any checking here and assume that the location passed in
+  // is within the bounds of the game board.
+  int offset = location.x + location.y * _board_size.width;
+  return _game_board[offset];
 }
 
 } // namespace aisnake
