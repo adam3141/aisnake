@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "cstdint": "cpp",
+        "bitset": "cpp"
+    },
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format-18",
+    "C_Cpp.doxygen.generatedStyle": "/**",
+    "C_Cpp.codeAnalysis.clangTidy.path": "/usr/bin/clang-tidy-18",
+    "C_Cpp.loggingLevel": "Information"
+}
