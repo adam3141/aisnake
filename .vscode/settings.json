@@ -2,7 +2,9 @@
     "files.associations": {
         "cstdint": "cpp",
         "bitset": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "*.tcc": "cpp",
+        "vector": "cpp"
     },
     "C_Cpp.clang_format_path": "/usr/bin/clang-format-18",
     "C_Cpp.doxygen.generatedStyle": "/**",

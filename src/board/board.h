@@ -17,6 +17,7 @@ class Snake;
 class Board {
 public:
   static std::unique_ptr<Board> createBoard(const Size &board_size);
+  ~Board()=default;
 
 private:
   Board(const Size &board_size, const Location &head_location);

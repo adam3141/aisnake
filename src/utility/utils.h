@@ -1,6 +1,7 @@
 #pragma once
 
 #include "snake_types.h"
+#include <string>
 
 namespace aisnake {
 /**
@@ -13,6 +14,7 @@ namespace aisnake {
  */
 Direction oppositeDirection(const Direction& direction);
 
+std::string toString(Direction direction);
 
 
 }

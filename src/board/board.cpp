@@ -1,4 +1,5 @@
 #include "board.h"
+#include "snake.h"
 
 #include <chrono>
 #include <random>
@@ -24,7 +25,7 @@ std::unique_ptr<Board> Board::createBoard(const Size &board_size) {
   std::uniform_int_distribution<int> width_dist(1, board_size.width - 2);
   Location head_location{width_dist(rng), height_dist(rng)};
 
-  auto board = std::make_unique<Board>(board_size, head_location);
+  auto board = std::unique_ptr<Board>(new Board(board_size, head_location));
 
   /* Adding the walls to the game board
    *
